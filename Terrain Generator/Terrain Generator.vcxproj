@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{64795CC1-5DC5-44AB-9991-6E36D57A9E74}</ProjectGuid>
+    <RootNamespace>Terrain</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>OpenGL32.lib;GLu32.lib;odbc32.lib;odbccp32.lib;SOILd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>C:\Users\Alberto\Documents\Visual Studio 2013\Projects\Terrain Generator\Terrain Generator\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>OpenGL32.lib;GLu32.lib;odbc32.lib;odbccp32.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>C:\Users\Alberto\Documents\Visual Studio 2013\Projects\Terrain Generator\Terrain Generator\Libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BaseGeometry.h" />
+    <ClInclude Include="Glext.h" />
+    <ClInclude Include="Libs\SOIL.h" />
+    <ClInclude Include="MS3Dff.h" />
+    <ClInclude Include="MS3Dmodel.h" />
+    <ClInclude Include="PhongTechs.h" />
+    <ClInclude Include="ProceduralCube.h" />
+    <ClInclude Include="ProceduralGrid.h" />
+    <ClInclude Include="SkyBox.h" />
+    <ClInclude Include="SkyTech.h" />
+    <ClInclude Include="TechBase.h" />
+    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="TerrTech.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="Water.h" />
+    <ClInclude Include="WaterTech.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseGeometry.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MS3Dmodel.cpp" />
+    <ClCompile Include="PhongTechs.cpp" />
+    <ClCompile Include="ProceduralCube.cpp" />
+    <ClCompile Include="ProceduralGrid.cpp" />
+    <ClCompile Include="SkyBox.cpp" />
+    <ClCompile Include="SkyTech.cpp" />
+    <ClCompile Include="TechBase.cpp" />
+    <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="TerrTech.cpp" />
+    <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="Water.cpp" />
+    <ClCompile Include="WaterTech.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Shaders\PhongNoTexPS.txt" />
+    <Text Include="Shaders\PhongNoTexVS.txt" />
+    <Text Include="Shaders\PhongPS.txt" />
+    <Text Include="Shaders\PhongVS.txt" />
+    <Text Include="Shaders\SkyPS.txt" />
+    <Text Include="Shaders\SkyVS.txt" />
+    <Text Include="Shaders\TerrainPS.txt" />
+    <Text Include="Shaders\TerrainVS.txt" />
+    <Text Include="Shaders\WaterPS.txt" />
+    <Text Include="Shaders\WaterVS.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\Tree1.ms3d" />
+    <None Include="Models\Tree2.ms3d" />
+    <None Include="Models\Tree3.ms3d" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Textures\Down.dds" />
+    <Image Include="Textures\East.dds" />
+    <Image Include="Textures\Grass.dds" />
+    <Image Include="Textures\North.dds" />
+    <Image Include="Textures\Rock.dds" />
+    <Image Include="Textures\Sand.dds" />
+    <Image Include="Textures\Snow.dds" />
+    <Image Include="Textures\South.dds" />
+    <Image Include="Textures\Tree1.dds" />
+    <Image Include="Textures\Tree2.dds" />
+    <Image Include="Textures\Tree3.dds" />
+    <Image Include="Textures\Up.dds" />
+    <Image Include="Textures\Water.dds" />
+    <Image Include="Textures\West.dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libs\SOIL.lib" />
+    <Library Include="Libs\SOILd.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

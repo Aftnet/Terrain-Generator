@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Definitions">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Geometries">
+      <UniqueIdentifier>{e8d6d964-b2dc-4d76-adb7-193942a11b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entry Point">
+      <UniqueIdentifier>{af12f983-8a45-44af-933c-ed6d9328fec3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders Sources">
+      <UniqueIdentifier>{495dbc93-8f70-4ea7-817e-b3f9789ba0e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader Techniques">
+      <UniqueIdentifier>{bf537ad0-6549-429c-a068-ac237492d71e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vectors">
+      <UniqueIdentifier>{dc36558a-857e-49dc-9cbf-427358d883fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Models">
+      <UniqueIdentifier>{d0ce8671-b071-4210-877e-9cf849b322f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Textures">
+      <UniqueIdentifier>{fdc8ce0e-3aef-472e-b8da-049a450b9798}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{e6b12b19-edbe-4a95-8c46-a98e8ecfbc10}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Glext.h">
+      <Filter>Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="MS3Dff.h">
+      <Filter>Definitions</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseGeometry.h">
+      <Filter>Geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="MS3Dmodel.h">
+      <Filter>Geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="ProceduralCube.h">
+      <Filter>Geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="ProceduralGrid.h">
+      <Filter>Geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyBox.h">
+      <Filter>Geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="Water.h">
+      <Filter>Geometries</Filter>
+    </ClInclude>
+    <ClInclude Include="PhongTechs.h">
+      <Filter>Shader Techniques</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyTech.h">
+      <Filter>Shader Techniques</Filter>
+    </ClInclude>
+    <ClInclude Include="TechBase.h">
+      <Filter>Shader Techniques</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrTech.h">
+      <Filter>Shader Techniques</Filter>
+    </ClInclude>
+    <ClInclude Include="WaterTech.h">
+      <Filter>Shader Techniques</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Vectors</Filter>
+    </ClInclude>
+    <ClInclude Include="Libs\SOIL.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BaseGeometry.cpp">
+      <Filter>Geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="MS3Dmodel.cpp">
+      <Filter>Geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="ProceduralCube.cpp">
+      <Filter>Geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="ProceduralGrid.cpp">
+      <Filter>Geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>Geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="Water.cpp">
+      <Filter>Geometries</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Entry Point</Filter>
+    </ClCompile>
+    <ClCompile Include="PhongTechs.cpp">
+      <Filter>Shader Techniques</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyTech.cpp">
+      <Filter>Shader Techniques</Filter>
+    </ClCompile>
+    <ClCompile Include="TechBase.cpp">
+      <Filter>Shader Techniques</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrTech.cpp">
+      <Filter>Shader Techniques</Filter>
+    </ClCompile>
+    <ClCompile Include="WaterTech.cpp">
+      <Filter>Shader Techniques</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Vectors</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Shaders\PhongNoTexPS.txt">
+      <Filter>Shaders Sources</Filter>
+    </Text>
+    <Text Include="Shaders\PhongNoTexVS.txt">
+      <Filter>Shaders Sources</Filter>
+    </Text>
+    <Text Include="Shaders\PhongPS.txt">
+      <Filter>Shaders Sources</Filter>
+    </Text>
+    <Text Include="Shaders\PhongVS.txt">
+      <Filter>Shaders Sources</Filter>
+    </Text>
+    <Text Include="Shaders\SkyPS.txt">
+      <Filter>Shaders Sources</Filter>
+    </Text>
+    <Text Include="Shaders\SkyVS.txt">
+      <Filter>Shaders Sources</Filter>
+    </Text>
+    <Text Include="Shaders\TerrainPS.txt">
+      <Filter>Shaders Sources</Filter>
+    </Text>
+    <Text Include="Shaders\TerrainVS.txt">
+      <Filter>Shaders Sources</Filter>
+    </Text>
+    <Text Include="Shaders\WaterPS.txt">
+      <Filter>Shaders Sources</Filter>
+    </Text>
+    <Text Include="Shaders\WaterVS.txt">
+      <Filter>Shaders Sources</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\Tree1.ms3d">
+      <Filter>Models</Filter>
+    </None>
+    <None Include="Models\Tree2.ms3d">
+      <Filter>Models</Filter>
+    </None>
+    <None Include="Models\Tree3.ms3d">
+      <Filter>Models</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Textures\Down.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\East.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\Grass.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\North.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\Rock.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\Sand.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\Snow.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\South.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\Tree1.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\Tree2.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\Tree3.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\Up.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\Water.dds">
+      <Filter>Textures</Filter>
+    </Image>
+    <Image Include="Textures\West.dds">
+      <Filter>Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libs\SOIL.lib">
+      <Filter>Libs</Filter>
+    </Library>
+    <Library Include="Libs\SOILd.lib">
+      <Filter>Libs</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
