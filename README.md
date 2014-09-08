@@ -1,3 +1,10 @@
+# Terrain Generator
+
+By [Alberto Fustinoni](http://aftnet.net)
+
+An OpenGL based procedural terrain generator, the application creates a grid shaped triangle mesh upon launch or user request and then pseudo randomly deforms it into a shape resembling a terrestrial landscape. In addition to this various techniques, ranging from texture splatting to procedural tree placement to water rendering, are used to increase the believability and aesthetic appeal of the generated landscape.
+While the Win32 initialization code is, again, derived from Matthew Bett’s framework, calls to OpenGL and its extensions have been arranged into a framework of my own making, which greatly simplifies scene description and provides custom functionality (model loading from binary Milkshape 3D files, for example).
+
 ## Controls
 
 - WASD: Move camera.
